@@ -1,0 +1,55 @@
+/* Basic styles */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+/*#main-content*/
+#main-content{
+    text-align: center;
+}
+main ul{
+    list-style: none;
+}
+/*Navigation bar styled with flex*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover{
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+/*skip to main content link*/
+.skip-link{
+    position: absolute;
+    top: -40px;
+    left: 10px;
+}
+.skip-link:focus{
+    top: 10px;
+    background-color: yellow;
+}
+/* Image box model */
+.styled-image{
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}

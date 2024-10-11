@@ -1,0 +1,50 @@
+/* Basic styles */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Navigation bar styled with flex*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover{
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+/*Grid styling */
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 15px;
+}
+/* nth-child styling*/
+.gallery-radius img:nth-child(odd){
+    border-radius: 20px;
+}
+.gallery-grid img:nth-child(even){
+    border-radius: 5px;
+}
+/* Image styling */
+.styled-image{
+    border: 3px solid #333;
+    padding: 5px;
+    max-width: 100%
+}
